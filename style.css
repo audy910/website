@@ -1,0 +1,169 @@
+html { /*text color and font*/
+  color: #59545A;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+nav { /*basic settings for nav*/
+  background-color: #59545A ;
+  text-align: center;
+  border-style: outset; 
+  border-color: #001049;
+}     
+nav ul { /* styles list in nav*/
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+      
+nav ul li { /*keeps test inline*/
+  display: inline-block;
+  list-style-type: none;     
+} 
+      
+ nav ul li a { /*padding, no default underline*/
+  text-decoration: none;         
+  padding: 20px;
+} 
+nav ul li a:link { /*fixes link styling before visting*/
+    text-decoration: none;
+    color: #9d0202;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+nav ul li a:visited { /* fixes link colors after visting*/
+  text-decoration: none;  
+  color: #9d0202;
+  font-weight: 900;
+  font-size: 25px;
+  }
+    
+nav ul li a:hover { /*when hovering link in nav*/
+    color: #001049;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+nav ul li a:active {
+    color: red;
+  
+}
+nav.sidebar{ /*postioning of sidebar*/
+  margin: 0;
+  padding: 0;
+  width: 225px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+div.content {  /*positioning for content in sidebar*/
+  margin-left: 200px;
+  padding: 1px 10px;
+  height: 300px;
+}
+
+@media screen and (max-width: 700px) { /*makes side bar go to top if screen 700 px*/
+  nav.sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  nav.sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) /*makes nav vertical if screen 400px*/
+{
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+@media screen and (min-width: 700px){ /*keeps text to right of sidebar*/
+  .main
+{
+  padding-left: 250px;
+}
+footer{
+  left: 250px;
+}
+}
+
+.pageContainer{ /*to keep footer at bottom*/
+  position: relative;
+  min-height: 100vh;
+}
+
+.contentWrap { /*keep footer at bottom*/
+  padding-bottom: 2.5rem;
+}
+
+footer { 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;            /* Footer height */
+}
+
+
+input[type=text], select, textarea {/* Style inputs with type="text", select elements and textareas */
+  width: 100%; 
+  padding: 12px; 
+  border: 1px outset  #001049; 
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+input[type=submit] { /* Style the submit button with a specific background color etc */
+  background-color: #001049;
+  color: #b1b1b1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+input[type=submit]:hover {/* When moving the mouse over the submit button, add a darker  color */
+  background-color: #001d87;
+}
+
+
+.container { /* Add a background color and some padding around the form */
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.fa { /*styles instagram logo/link on contact page*/
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background:  #9d0202;
+  color: #b1b1b1;
+}
+
+table{ /* basic styling for just table on home pg*/
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th { /*basic styling for top of table*/
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+  font-size: 18px;
+}
+table, th, td { /*basic styling for table+text*/
+  border: 1px solid black;
+}
+
+
+
+
