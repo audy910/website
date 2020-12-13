@@ -1,12 +1,17 @@
+/* h1{
+  color: #d05d47;
+} */
 html { /*text color and font*/
-  color: #59545A;
+  color: #d05d47;
   font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  background-color:#f2f2f2;
 }
+
 nav { /*basic settings for nav*/
-  background-color: #59545A ;
+  background-color: #9a6c63 ;
   text-align: center;
   border-style: outset; 
-  border-color: #001049;
+  border-color: #d05d47;
 }     
 nav ul { /* styles list in nav*/
   margin: 0;
@@ -25,26 +30,26 @@ nav ul li { /*keeps test inline*/
 } 
 nav ul li a:link { /*fixes link styling before visting*/
     text-decoration: none;
-    color: #9d0202;
+    color: #b4840d;
     font-weight: 900;
     font-size: 25px;
 }
 
 nav ul li a:visited { /* fixes link colors after visting*/
   text-decoration: none;  
-  color: #9d0202;
+  color: #b4840d;
   font-weight: 900;
   font-size: 25px;
   }
     
 nav ul li a:hover { /*when hovering link in nav*/
-    color: #001049;
+    color: #d05d47;
     font-size: 30px;
     font-weight: 400;
 }
 
 nav ul li a:active {
-    color: red;
+    color: #008989;
   
 }
 nav.sidebar{ /*postioning of sidebar*/
@@ -108,7 +113,7 @@ footer {
 input[type=text], select, textarea {/* Style inputs with type="text", select elements and textareas */
   width: 100%; 
   padding: 12px; 
-  border: 1px outset  #001049; 
+  border: 1px outset  #d05d47; 
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
@@ -118,8 +123,8 @@ input[type=text], select, textarea {/* Style inputs with type="text", select ele
 
 
 input[type=submit] { /* Style the submit button with a specific background color etc */
-  background-color: #001049;
-  color: #b1b1b1;
+  background-color: #d05d47;
+  color: #546978;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
@@ -128,7 +133,7 @@ input[type=submit] { /* Style the submit button with a specific background color
 
 
 input[type=submit]:hover {/* When moving the mouse over the submit button, add a darker  color */
-  background-color: #001d87;
+  background-color: #d05e478f;
 }
 
 
@@ -145,8 +150,8 @@ input[type=submit]:hover {/* When moving the mouse over the submit button, add a
   text-align: center;
   text-decoration: none;
   border-radius: 50%;
-  background:  #9d0202;
-  color: #b1b1b1;
+  background:  #b4840d;
+  color: #9a6c63;
 }
 
 table{ /* basic styling for just table on home pg*/
@@ -161,9 +166,75 @@ th { /*basic styling for top of table*/
   font-size: 18px;
 }
 table, th, td { /*basic styling for table+text*/
-  border: 1px solid black;
+  border: 1px solid #546978;
+}
+tr:hover {
+  color: #b4840d;
+  background-color: #ffffff;
+  box-shadow: 5px 5px 15px 5px #888888;
 }
 
+caption{
+  color: #008989
+}
 
+@media screen and (max-width: 900px)
+{
+.pdf iframe{
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 0;
+   width: 100%;
+}
+.pdf {
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9*/
+  position: relative;
+}
+}
 
+@media screen and (min-width: 901px){
+.pdf iframe{
+   width: 640px;
+   height: 400px;
+}
+}
 
+.tab  /*to create a tab on home page*/
+{
+    display: inline-block;
+    margin-left: 40px;
+
+}
+dt{ /*lists*/
+  color: #008989
+}
+dd, ul{/*lists*/
+  color:#546978;
+}
+caption{
+  color: #546978;
+}
+
+video {
+  border: 3px outset #d05d47;
+}
+
+.right {
+  text-align: right;
+}
+
+p{
+  text-align: left;
+}
+.center{
+  text-align: center;
+}
+
+img{
+  width:100%;
+  max-width: 400px;
+  height: auto;
+}
